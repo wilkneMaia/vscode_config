@@ -1,0 +1,292 @@
+{
+    // Editor
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    // "editor.tabSize": 2,
+    "editor.lineHeight": 26,
+    "editor.fontWeight": "500",
+    "editor.minimap.enabled": false, // Desabilita o minimapa lateral ('preview' do lado direito)
+    "editor.mouseWheelZoom": true, // Habilita poder dar zoom com Ctrl + Scroll do mouse
+    "editor.renderWhitespace": "boundary", //Mostra 'pontinhos' no inicio da linha indicando espaços
+    "editor.renderLineHighlight": "gutter",
+    "editor.formatOnSave": true, // Formata o arquivo ao salvar
+    "editor.formatOnPaste": true, // Formata o arquivo ao colar algo
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestionsDelay": 0, // Delay para dar sugestões
+    "editor.detectIndentation": true, // Detecta a identação automaticamente
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true, //"active",
+    "editor.renderControlCharacters": false,
+    "editor.cursorBlinking": "solid",
+    "editor.inlineSuggest.enabled": true,
+    "editor.guides.indentation": true,
+    "editor.rulers": [
+        80,
+        120
+    ], // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "never",
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    // material-icon-theme
+    "material-icon-theme.folders.color": "#2e7d32",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.activeIconPack": "nest",
+    "material-icon-theme.folders.associations": {
+        "global_state": "global",
+        "ui": "layout",
+        "presentation": "layout",
+        "widgets": "components",
+        "bloc": "ngrx-store",
+        "application": "ngrx-store",
+        "state": "ngrx-store",
+        "infrastructure": "database",
+        "fixtures": "config",
+        "domain": "rules",
+        "device": "client",
+        "entities": "class",
+        "features": "other",
+        "fp": "functions",
+        "routing": "routes",
+        "injection": "custom",
+        "l10n": "i18n"
+    },
+    "material-icon-theme.files.associations": {
+        "*.moor": "database"
+    },
+    // Explorer
+    "explorer.compactFolders": false,
+    "explorer.sortOrder": "type", // Ordena os arquivos por tipo primeiro e depois por ordem alfabética
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    // workbench
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.highlightModifiedTabs": true, // Habilita mostrar quais abas foram editadas e não salvas ainda
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.colorCustomizations": {
+        "[Community Material Theme Darker]": {
+            "statusBar.debuggingBackground": "#212121"
+        },
+        "[Community Material Theme]": {
+            "statusBar.debuggingBackground": "#263238"
+        },
+        "[Material Theme Palenight]": {
+            "statusBar.debuggingBackground": "#292D3E"
+        },
+        "tab.activeBackground": "#038103",
+        "tab.activeForeground": "#fdfdfd",
+    },
+    // terminal
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 14, // Tamanho da fonte no terminal
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontWeight": "500",
+    // yaml
+    "yaml.schemas": {
+        "file:///Users/wilkne/.vscode/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
+    },
+    // files
+    "files.autoSave": "afterDelay", // Habilitar autosave
+    "files.autoSaveDelay": 100, // Delay do autosave
+    "files.trimTrailingWhitespace": true, // Remove os espaços no final da linha
+    "files.trimFinalNewlines": true, // Retira as linhas em branco no final do arquivo
+    "files.eol": "\n", // Declara o tipo de fim de linha, para ter um padrão nos arquivos
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        //! For Moor
+        "*.moor": "sqlite",
+        ".sequelizerc": "javascript",
+        ".stulelintrc": "json",
+        "prettier": "json"
+    },
+    "files.exclude": { // Arquivos para serem ignorados no Explorer do VS Code
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/_site": true,
+        "**/tmp": true,
+        "**/*.pyc": true,
+        "**/*.asset-cache": true,
+        "**/*.cache": true,
+        "**/*.jekyll-cache": true,
+        "**/*.tweet-cache": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/*.egg-info": true,
+        "**/*.coverage": true,
+        "**/celerybeat-schedule": true,
+        "**/node_modules": false,
+        "**/bower_components": true,
+        "**/*.freezed.dart": false,
+        "**/*.g.dart": false,
+        "**/.gitkeep": false
+    },
+    //redhat
+    "redhat.telemetry.enabled": true,
+    // git
+    "git.autofetch": true, // Faz um auto-fetch no git de tempo em tempo
+    "git.enableSmartCommit": true,
+    // python
+    "[python]": { // Arruma a tabulação do python para ser de acordo com o pep8
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    // Script
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.formatOnSave": false,
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false,
+    },
+    // Dart
+    "dart.warnWhenEditingFilesOutsideWorkspace": false,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80,
+            140
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "dart.lineLength": 80,
+    "dart.autoImportCompletions": true,
+    "dart.flutterCreateOrganization": "com.maias",
+    "dart.flutterCreateAndroidLanguage": "kotlin",
+    "dart.flutterCreateIOSLanguage": "swift",
+    "dart.previewFlutterOutline": true,
+    "dart.previewFlutterGutterIcons": true,
+    "dart.debugExternalLibraries": true,
+    "dart.enableMachineLearningCodeCompletion": true,
+    "dart.previewBuildRunnerTasks": true,
+    "dart.debugSdkLibraries": false,
+    "dart.additionalAnalyzerFileExtensions": [
+        "moor"
+    ],
+    "dart.showIgnoreQuickFixes": true,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.previewUpdateImportsOnRename": true,
+    "dart_data_class_generator.constructor.required": true,
+    "dart_data_class_generator.constructor.default_values": false,
+    "dart_data_class_generator.hashCode.use_jenkins": false,
+    "dart.flutterSdkPaths": [
+        "/Users/wilkne/Workspace/bin/fvm/versions"
+    ],
+    // Markdow
+    "[markdown]": { // Muita gente usa espaços duplos ("  ") no final da linha do MarkDown para indicar quebra de linha, então isso aqui ignora a opção de remover espaços em brancos no final das linhas do markdown
+        "files.trimTrailingWhitespace": false
+    },
+    // todo-tree
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.highlights.enabled": false,
+    "todo-tree.tree.showScanModeButton": false,
+    // emmet
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": { // Linguagens que vão ter uso do emmet
+        "html": "html",
+        "erb": "erb",
+        "javascript": "javascriptreact",
+        "vue": "html",
+        "ejs": "html"
+    },
+    // html
+    "[html]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+    // javascript
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.validate.eslint": "explicit",
+            "source.autoFix.eslint": "explicit"
+        }
+    },
+    // typescripttreact
+    "[typescripttreact]": {
+        "editor.codeActionsOnSave": {
+            "source.validate.eslint": "explicit",
+            "source.autoFix.eslint": "explicit"
+        }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "extensions.autoUpdate": true,
+    "debug.console.fontFamily": "Fira Code",
+    "pubspec-assist.sortDependencies": false,
+    "todohighlight.keywordsPattern": "(NOTE|TODO|FIXME|REMEMBER)",
+    "breadcrumbs.enabled": true, // Habilidar Breadcrumbs (auxiliar de navegação)
+    "extensions.ignoreRecommendations": true,
+    "python.formatting.provider": "none",
+    "dart.debugExternalPackageLibraries": true,
+    "terminal.integrated.env.osx": {},
+    "tabnine.experimentalAutoImports": true,
+    "[javascript][typescripttreact]": {
+        "editor.codeActionsOnSave": {
+            "source.validate.eslint": "explicit",
+            "source.autoFix.eslint": "explicit"
+        }
+    },
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "diffEditor.maxComputationTime": 0,
+    "git.openRepositoryInParentFolders": "always",
+    "interactiveWindow.executeWithShiftEnter": true
+    // "cSpell.diagnosticLevel": "Hint",
+    // "better-comments.multilineComments": true,
+    // "sync.gist": "b2148bca5dd4586fc03b55fbb793c086",
+    // "tabnine.experimentalAutoImports": true,
+    // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // Remove .fvm files from search
+    // "search.exclude": {
+    //     "**/.fvm": true
+    // },
+    // // Remove from file watching
+    // "files.watcherExclude": {
+    //     "**/.fvm": true
+    // },
+    // window
+    // "window.zoomLevel": 1,
+}
